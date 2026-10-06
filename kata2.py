@@ -1,14 +1,6 @@
-# Warehouse Audit Calendar
-# For days 1–30, apply these rules:
-
-# Every 3rd day → Cycle count
-# Every 5th day → Scanner audit
-# Days that are both → FULL AUDIT
-# Any other day → Normal operations
-
-# Expected: Day 3: Cycle count, Day 5: Scanner audit, Day 15: FULL AUDIT, Day 30: FULL AUDIT
 
 
+#Formula returns 1-30 days and evrything that is divisible by 3, 5, and 15. 
 for day in range(1, 31):
     if day % 15 == 0:
         print(f"Day {day}: FULL AUDIT")
