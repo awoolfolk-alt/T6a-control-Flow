@@ -8,5 +8,6 @@ for day in range(1, 31):
         print(f"Day {day}: Scanner audit")
     elif day % 3 == 0:
         print(f"Day {day}: Cycle count")
+        #this function ensure the days arent divisible by 3, 5, or 15 are printed as normal operations.
     else:
         print(f"Day {day}: Normal operations")
